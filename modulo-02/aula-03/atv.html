@@ -12,15 +12,12 @@
         <br>
         <input type="password" name="senha" placeholder="sua senha">
         <br>
-        <input type="checkbox" name="aceite" value="sim"> aceito os termos
-        <br>
         <input type="radio" name="genero" value="f"> Femenino
         <br>
         <input type="radio" name="genero" value="m">Masculino
         <br>
         <input type="radio" name="genero" value="outros">Outros
 
-        <br>
         <br>
 
         <input type="file" name="foto_perfil">
@@ -36,14 +33,29 @@
         <br>
         <textarea name="messagem rows=" 5" placeholder="escreva sua messagem"></textarea>
 
-        <button type="submit">enviar</button>
         <br>
         <label for="campo-nome">Nome comleto</label>
+<br>
         <input type="text" id="campo-nome" nome="nome">
-        <br>
+<br>
+<br>
         <label for="campo-aceite">Aceito os termos de uso</label>
         <input type="checkbox" id="campo-aceito" name="aceite">
-
+<br>
+        <label for="cep">CEP</label>
+        <input type="text"
+        id="cep"
+        name="cep"
+           pattern="[0-9]{5}-[0-9]{3}"
+           title="FORMATO ESPERADO: OOOOO-OOO">
+<br>
+<br>
+        <label for="telefone">TELEFONE</label>
+<br>
+        <input type="tel"
+        name="telefone"
+        id="telefone"placeholder="(00) 00000-0000" required inputmode="tel" pattern=""\(\d{2}\) \d{5}-\d{4}" title="FORMATO ESPERADO: (00) 00000-0000">
+<br>
         <input type="text" required>
         <button type='submit'>ENVIAR</button>
 
