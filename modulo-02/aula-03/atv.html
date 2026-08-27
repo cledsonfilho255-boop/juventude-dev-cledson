@@ -9,28 +9,44 @@
     <form actin="/enviar-contato" method="post">
         <input type="email" name="email" placeholder="seu@email.com">
         <br>
+        <br>
         <input type="password" name="senha" placeholder="sua senha">
-    </form>
+        <br>
+        <input type="checkbox" name="aceite" value="sim"> aceito os termos
+        <br>
+        <input type="radio" name="genero" value="f"> Femenino
+        <br>
+        <input type="radio" name="genero" value="m">Masculino
+        <br>
+        <input type="radio" name="genero" value="outros">Outros
+
+        <br>
+        <br>
+
+        <input type="file" name="foto_perfil">
+
+        <br>
+        <br>
+        <select name="assunto">
+            <option value="duvida">duvida/option>
+            <option value="elogio">elogio</option>
+            <option value="reclamaçao">reclamaçao</option>
+        </select>
+        <br>
+        <br>
+        <textarea name="messagem rows=" 5" placeholder="escreva sua messagem"></textarea>
+
+        <button type="submit">enviar</button>
+        <br>
+        <label for="campo-nome">Nome comleto</label>
+        <input type="text" id="campo-nome" nome="nome">
+        <br>
+        <label for="campo-aceite">Aceito os termos de uso</label>
+        <input type="checkbox" id="campo-aceito" name="aceite">
+
+        <input type="text" required>
+        <button type='submit'>ENVIAR</button>
+
 </body>
-
-<input type="checkbox" name="aceite" value="sim"> aceito os termos
-
-<input type="radio" name="genero" value="f"> Femenino
-<input type="radio" name="genero" value="m">Masculino
-<input type="radio" name="genero" value="outros">Outros
-
-<input type="file" name="foto_perfil">
-<br>
-<br>
-
-<select name="assunto">
-    <option value="duvida">duvida/option>
-    <option value="elogio">elogio</option>
-    <option value="reclamaçao">reclamaçao</option>
-</select>
-
-<textarea name="messagem rows=" 5" placeholder="escreva sua messagem"></textarea>
-
-<button type="submit">enviar</button>
 
 </html>
