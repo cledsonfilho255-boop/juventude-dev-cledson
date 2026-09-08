@@ -1,0 +1,52 @@
+.apresentacao {
+    color:#1e293b;
+    background :#dbeafe;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+ 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    min-height: 100vh;
+    margin: 0;
+    padding: 24px;
+    place-items: center;
+    background: #f4f7fb;
+    color: #1f2937;
+    font-family: Arial, sans-serif;
+}
+
+.cartao {
+    width: min(100%, 420px);
+    padding: 32px;
+    border: 1px solid #dbe3ef;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0 8px 24px rgb(31 41 55 / 10%);
+    text-align: center;
+}
+
+#titulo {
+    margin-top: 0;
+    color: #2563eb;
+}
+
+.bio {
+    color: #4b5563;
+}
+
+.interesses {
+    padding-left: 24px;
+    list-style-position: inside;
+}
+
+a {
+    color: #1d4ed8;
+    font-weight: bold;
+}
