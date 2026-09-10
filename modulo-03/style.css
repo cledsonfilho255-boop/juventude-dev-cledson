@@ -1,0 +1,51 @@
+.musica {
+    color:#1e293b;
+    background :#dbeafe;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding:5px;
+    margin:2px;
+}
+
+ .jogos {
+   color:#1e293b;
+    background :#dbeafe;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding:5px;
+    margin:2px;
+} 
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center; /* centraliza na horizontal */
+    align-items: center;     /* centraliza na vertical */
+
+    background-color: #f0f0f0;
+}
+.caixa {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px; /* bordas arredondadas */
+    box-shadow: 0 5px 20px rgb(0, 0, 0);
+
+    text-align: center;
+    width: 400px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+p {color:#334155}
+.destaque { background:yellow;}
+#titulo-principal { font-size: 32px;}
+.música h1 { color: #475569}
+.jogos > a { color: white; }
+input[type="email"] { border-color: blue;}
