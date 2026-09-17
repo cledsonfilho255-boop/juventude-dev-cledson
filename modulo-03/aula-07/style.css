@@ -1,0 +1,39 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    background: #0F0A2E;
+    padding: 1.5rem;
+}
+
+
+.todo {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.topo {
+min-height: 20vh;
+margin-bottom: 1rem;
+border-radius: 18px;
+background: linear-gradient(135deg,#2D1B69, #7C3AED);
+box-shadow: 0 10px 24px rgba(0, 0, 0, .35);
+} 
+
+.center{
+    text-align: center;
+
+} 
+
+.card-center{
+      display: inline-block;
+      vertical-align: top;
+      width: 22%;
+      min-height: 14vh;
+      background-color: #1B1538;
+      margin: .5% 1%;
+      border: 2px solid rgba(255, 255, 255, .12);
+} 
