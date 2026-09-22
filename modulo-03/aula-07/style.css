@@ -37,3 +37,27 @@ box-shadow: 0 10px 24px rgba(0, 0, 0, .35);
       margin: .5% 1%;
       border: 2px solid rgba(255, 255, 255, .12);
 } 
+
+nav{
+margin-bottom: 1rem;
+padding: 1rem;
+border-radius: 14px;
+background:#1B1538
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+nav a {
+    color:#FFFFFF;
+    text-decoration: none;
+    font-wheight: bold;
+}
+
+nav a:hover {
+    color:#FF3D7F;
+}
