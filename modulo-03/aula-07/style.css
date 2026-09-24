@@ -38,36 +38,50 @@ box-shadow: 0 10px 24px rgba(0, 0, 0, .35);
       border: 2px solid rgba(255, 255, 255, .12);
 } 
 
-nav{
+.menu{
 margin-bottom: 1rem;
 padding: 1rem;
 border-radius: 14px;
 background:#1B1538
 }
 
-nav ul {
+.menu ul {
     display: flex;
     justify-content: center;
     gap: 2rem;
     list-style: none;
 }
 
-nav a {
+.menu a {
     color:#FFFFFF;
     text-decoration: none;
-    font-wheight: bold;
+    font-weight: bold;
 }
 
-nav a:hover {
+.menu a:hover {
     color:#FF3D7F;
 }
 
 .menu-toggle {position: absolute; opacity:0;}
 
-.men-botao {
+.menu-botao {
     display: inline-block;
     margin-bottom: 1rem;
-    padding: .5rem ,75rem;
+    padding: .5rem 0.75rem;
     color:#FFFFFF;
-    
+    background-color: #1B1538;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.5rem;
 }
+
+
+.menu-toggle:checked ~ .menu{
+    display: inline-block; 
+}
+
+@media (max-width: 768px)  {
+  
+        .menu { display: none; }
+
+    }
