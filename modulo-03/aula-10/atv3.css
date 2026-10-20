@@ -1,0 +1,134 @@
+:root {
+	color-scheme: dark;
+	--page: #151a20;
+	--panel: #202832;
+	--field: #171e26;
+	--ink: #edf3f8;
+	--muted: #aab6c2;
+	--line: #3a4653;
+	--blue: #4d9fff;
+	--danger: #ff9998;
+}
+
+body {
+	min-height: 100vh;
+	color: var(--ink);
+	background-color: var(--page);
+	font-family: "Segoe UI", sans-serif;
+}
+
+.product-card {
+	max-width: 650px;
+	border: 1px solid var(--line);
+	border-radius: 0.75rem;
+	background: var(--panel);
+	box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.22);
+}
+
+h1 {
+	color: var(--ink);
+	font-weight: 700;
+	letter-spacing: 0;
+}
+
+.intro {
+	color: var(--muted);
+}
+
+.form-label {
+	color: #dce6ef;
+	font-weight: 600;
+}
+
+.form-control,
+.form-select,
+.input-group-text {
+	min-height: 3rem;
+	border-color: var(--line);
+	color: var(--ink);
+	background-color: var(--field);
+}
+
+.input-group-text {
+	color: #b7c5d1;
+	background-color: #222e39;
+}
+
+.form-control::placeholder {
+	color: #8796a4;
+	opacity: 1;
+}
+
+.form-select option {
+	color: var(--ink);
+	background-color: var(--field);
+}
+
+.form-control:focus,
+.form-select:focus {
+	z-index: 3;
+	border-color: var(--blue);
+	color: #fff;
+	background-color: #151e27;
+	box-shadow: 0 0 0 0.2rem rgba(77, 159, 255, 0.22);
+}
+
+.input-group:focus-within .input-group-text {
+	border-color: var(--blue);
+	color: #deedff;
+}
+
+.form-control:user-invalid,
+.form-select:user-invalid {
+	border-color: var(--danger);
+}
+
+.form-control:user-invalid ~ .invalid-feedback,
+.form-select:user-invalid ~ .invalid-feedback {
+	display: block;
+	color: var(--danger);
+}
+
+.input-group .invalid-feedback {
+	flex-basis: 100%;
+}
+
+.form-actions {
+	padding-top: 1rem;
+	border-top: 1px solid var(--line);
+}
+
+.btn {
+	min-height: 2.75rem;
+	font-weight: 600;
+}
+
+.btn-primary {
+	--bs-btn-color: #071522;
+	--bs-btn-bg: var(--blue);
+	--bs-btn-border-color: var(--blue);
+	--bs-btn-hover-color: #071522;
+	--bs-btn-hover-bg: #79b9ff;
+	--bs-btn-hover-border-color: #79b9ff;
+}
+
+.btn-outline-secondary {
+	--bs-btn-color: #c0cbd5;
+	--bs-btn-border-color: #526171;
+	--bs-btn-hover-color: #f4f7fa;
+	--bs-btn-hover-bg: #2b3540;
+	--bs-btn-hover-border-color: #718398;
+	--bs-btn-active-bg: #313d49;
+}
+
+.btn:focus-visible {
+	outline: 3px solid #b4dbff;
+	outline-offset: 3px;
+	box-shadow: 0 0 0 5px rgba(77, 159, 255, 0.25);
+}
+
+@media (max-width: 575.98px) {
+	.form-actions .btn {
+		width: 100%;
+	}
+}

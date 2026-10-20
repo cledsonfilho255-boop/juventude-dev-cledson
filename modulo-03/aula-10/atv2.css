@@ -1,0 +1,208 @@
+:root {
+	color-scheme: dark;
+	--page: #11161c;
+	--panel: #1b232d;
+	--field: #131a22;
+	--ink: #edf3fa;
+	--muted: #a7b4c2;
+	--line: #384656;
+	--blue: #4b9fff;
+	--blue-hover: #78b8ff;
+	--error: #ff8e91;
+}
+
+body {
+	min-height: 100vh;
+	color: var(--ink);
+	background-color: var(--page);
+	background-image:
+		linear-gradient(rgba(104, 143, 181, 0.035) 1px, transparent 1px),
+		linear-gradient(90deg, rgba(104, 143, 181, 0.035) 1px, transparent 1px),
+		linear-gradient(145deg, #18212b, var(--page) 58%, #10161c);
+	background-size: 36px 36px, 36px 36px, auto;
+	font-family: "Segoe UI", sans-serif;
+}
+
+.page-shell {
+	min-height: 100vh;
+	max-width: 1040px;
+}
+
+.product-card {
+	max-width: 650px;
+	overflow: hidden;
+	border: 1px solid #364554;
+	border-radius: 0.9rem;
+	background-color: var(--panel);
+	box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3);
+}
+
+.card-accent {
+	height: 3px;
+	background: linear-gradient(90deg, var(--blue), #6ed1f2 58%, transparent);
+}
+
+.eyebrow {
+	color: #91c5ff;
+	font-family: "Consolas", "Courier New", monospace;
+	font-size: 0.7rem;
+	font-weight: 700;
+	letter-spacing: 0.09em;
+}
+
+h1 {
+	color: var(--ink);
+	font-weight: 700;
+	letter-spacing: 0;
+}
+
+.intro {
+	color: var(--muted);
+	font-size: 0.94rem;
+	line-height: 1.6;
+}
+
+.form-label {
+	margin-bottom: 0.5rem;
+	color: #dbe5ee;
+	font-size: 0.88rem;
+	font-weight: 600;
+}
+
+.form-control,
+.form-select,
+.input-group-text {
+	min-height: 3rem;
+	border-color: var(--line);
+	color: var(--ink);
+	background-color: var(--field);
+	font-size: 0.92rem;
+}
+
+.input-group-text {
+	color: #aebdca;
+	background-color: #202a35;
+}
+
+.form-control::placeholder {
+	color: #8796a5;
+	opacity: 1;
+}
+
+.form-select option {
+	color: var(--ink);
+	background-color: var(--field);
+}
+
+.form-control:hover,
+.form-select:hover {
+	border-color: #63778b;
+}
+
+.form-control:focus,
+.form-select:focus {
+	z-index: 3;
+	border-color: var(--blue);
+	color: #fff;
+	background-color: #151e27;
+	box-shadow: 0 0 0 0.22rem rgba(75, 159, 255, 0.22);
+}
+
+.input-group:focus-within .input-group-text {
+	border-color: var(--blue);
+	color: #dcecff;
+}
+
+textarea.form-control {
+	min-height: 7.5rem;
+	resize: vertical;
+}
+
+.form-control:user-invalid,
+.form-select:user-invalid {
+	border-color: var(--error);
+}
+
+.form-control:user-invalid:focus,
+.form-select:user-invalid:focus {
+	box-shadow: 0 0 0 0.22rem rgba(255, 105, 112, 0.2);
+}
+
+.invalid-feedback {
+	color: var(--error);
+	font-size: 0.78rem;
+}
+
+.input-group .invalid-feedback {
+	flex-basis: 100%;
+}
+
+.form-actions {
+	padding-top: 1.25rem;
+	border-top: 1px solid #303b47;
+}
+
+.btn {
+	min-height: 2.85rem;
+	border-radius: 0.5rem;
+	font-size: 0.88rem;
+	font-weight: 650;
+	transition: background-color 160ms ease, border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.btn-primary {
+	--bs-btn-color: #071522;
+	--bs-btn-bg: var(--blue);
+	--bs-btn-border-color: var(--blue);
+	--bs-btn-hover-color: #071522;
+	--bs-btn-hover-bg: var(--blue-hover);
+	--bs-btn-hover-border-color: var(--blue-hover);
+	--bs-btn-active-color: #071522;
+	--bs-btn-active-bg: #3288e4;
+	--bs-btn-active-border-color: #3288e4;
+	box-shadow: 0 0.35rem 1rem rgba(75, 159, 255, 0.15);
+}
+
+.btn-primary:hover {
+	box-shadow: 0 0.4rem 1.2rem rgba(75, 159, 255, 0.25);
+	transform: translateY(-1px);
+}
+
+.btn-outline-secondary {
+	--bs-btn-color: #c0cbd5;
+	--bs-btn-border-color: #526171;
+	--bs-btn-hover-color: #f4f7fa;
+	--bs-btn-hover-bg: #2b3540;
+	--bs-btn-hover-border-color: #718398;
+	--bs-btn-active-bg: #313d49;
+}
+
+.btn:focus-visible {
+	outline: 3px solid #b4dbff;
+	outline-offset: 3px;
+	box-shadow: 0 0 0 5px rgba(75, 159, 255, 0.25);
+}
+
+@media (max-width: 575.98px) {
+	.page-shell {
+		padding-right: 0.8rem;
+		padding-left: 0.8rem;
+	}
+
+	.card-body {
+		padding: 1.25rem !important;
+	}
+
+	.form-actions .btn {
+		width: 100%;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		scroll-behavior: auto !important;
+		transition-duration: 0.01ms !important;
+	}
+}
